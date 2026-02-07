@@ -1,7 +1,14 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.maven.publish)
 }
+
+val versionProps = Properties().apply {
+    file("../version.properties").inputStream().use { load(it) }
+}
+val libraryVersion: String = versionProps.getProperty("VERSION_NAME")
 
 android {
     namespace = "com.atritripathi.stallwart"
@@ -54,13 +61,13 @@ mavenPublishing {
     publishToMavenCentral(com.vanniktech.maven.publish.SonatypeHost.CENTRAL_PORTAL)
     signAllPublications()
 
-    coordinates("com.atritripathi", "stallwart", "1.0.0")
+    coordinates("com.atritripathi", "stallwart", libraryVersion)
 
     pom {
         name.set("Stallwart")
         description.set("A reliable ANR detection library for Android that captures the exact code causing UI freezes")
         url.set("https://github.com/AtriTripathi/Stallwart")
-        inceptionYear.set("2024")
+        inceptionYear.set("2026")
 
         licenses {
             license {
