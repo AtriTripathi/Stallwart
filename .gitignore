@@ -8,14 +8,7 @@ build/
 local.properties
 
 # IDE - Android Studio / IntelliJ
-.idea/workspace.xml
-.idea/caches/
-.idea/libraries/
-.idea/modules.xml
-.idea/navEditor.xml
-.idea/assetWizardSettings.xml
-.idea/*.iml
-*.iml
+.idea/
 
 # macOS
 .DS_Store
