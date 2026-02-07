@@ -1,0 +1,28 @@
+# Built artifacts
+*.iml
+.gradle/
+build/
+/captures
+
+# Local configuration
+local.properties
+
+# IDE - Android Studio / IntelliJ
+.idea/workspace.xml
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/*.iml
+*.iml
+
+# macOS
+.DS_Store
+
+# Native build
+.externalNativeBuild/
+.cxx/
+
+# Kotlin
+*.class
