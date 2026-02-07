@@ -45,11 +45,13 @@ Add the dependency to your app's `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.atritripathi:stallwart:1.0.0")
+    implementation("com.atritripathi:stallwart:<version>")
 }
 ```
 
-> **Note**: The library is published to Maven Central, which is included by default in new Android projects. If you're using an older project, ensure `mavenCentral()` is in your repositories.
+> 📌 Replace `<version>` with the latest version from the badge above.
+>
+> The library is published to Maven Central, which is included by default in new Android projects. If you're using an older project, ensure `mavenCentral()` is in your repositories.
 
 ## Quick Start
 
